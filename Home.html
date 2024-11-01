@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>LESOTHO HUB</title>
+    <style>
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+           
+            color: #fff;
+        }
+       
+        .accessories {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .item {
+            text-align: center;
+
+        }
+        .item img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .shop-button {
+            display: block;
+            width: 150px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: green;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+       
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 ,h5{
+            color: green;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+       
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none; 
+            width:10 %;
+            transition: opacity 1s ease-in-out;
+            opacity: 0; 
+        }
+
+        .active {
+            display: block;
+            opacity: 1; 
+        }
+
+        .text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .circle-layout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            flex-wrap: wrap;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+            margin: 20px;
+            transition: transform 0.3s;
+            position: relative; 
+        }
+
+        .product-card.sale {
+            border: 2px solid #FF4500; 
+        }
+
+        .sale-label {
+            background-color: #FF4500;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 0.8em;
+        }
+
+        .price {
+            color: #28A745;
+            font-size: 1.5em;
+        }
+
+        .buy-button {
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .buy-button:hover {
+            background-color: green;
+        }
+
+        #cart {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            color: white;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .modal-header, .modal-footer {
+            text-align: center;
+        }
+
+        .modal-footer {
+            margin-top: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .proceed-button {
+            background-color: #28A745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .proceed-button:hover {
+            background-color: #218838;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;}
+
+        h2 {
+            margin-top: 20px;
+            color: rgb(3, 162, 3);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        li {
+            margin: 0 15px;
+            color: green;
+        }
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+       footer {
+            text-align: center;
+            margin-top: 20px;
+            
+        
+            color: rgb(3, 162, 3);
+        }
+        .bordered-text {
+            border: 2px solid green;
+            padding: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .button, .sub-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover, .sub-button:hover {
+            background-color: darkgreen;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(3, 162, 3);
+        }
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 5px;
+            width: 150px;
+            text-align: center;
+        }
+        .back-button {
+            display: none;
+           color:green;
+           button:hover;
+        }
+
+
+
+
+header {
+    background-color: rgb(3, 162, 3);;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h3, h4,h5{
+    color: green;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+
+
+.responsive-link {
+    display: inline-block;
+    background-color: green;
+    color: #333; 
+    padding: 10px 15px; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+}
+
+#seasonal-button:hover {
+            background-color: darkgreen;
+        }
+
+@media (max-width: 600px) {
+    .responsive-link {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+ @media (max-width: 600px) {
+            #seasonal-button {
+                font-size: 16px;
+                padding: 12px 20px; 
+
+.responsive-link:hover {
+    background-color: green; 
+}
+
+.chart-image {
+   width:10px;
+    height: 10px;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LESOTHO HUB</h1>
+
+ <ul>
+        
+        <li><a href="About us.html">ABOUT US</a></li>
+        <li><a href="Contact Us.html">CONTACT US</a></li>
+
+    <li><a href="Business tips.html">BUSINESS TIPS</a></li>
+          </ul>
+
+    </header>
+    
+
+       
+
+    
+    <div class="bordered-text">
+        <h2>WELCOME TO LESOTHO HUB
+        <p>EXPLORE WITH US</p> </h2>
+    </div>
+    
+    <div class="button-container">
+        <div>
+            <button class="button" onclick="toggleInfo('farmers-info')">FARMERS</button>
+            <div id="farmers-info" class="info">
+                <button class="sub-button" onclick="showDetail('vegetables-info'); showBackButton();">Vegetables</button>
+                <div id="vegetables-info" class="info">
+                    <h2> Products</h2>
+                    <div id="products">
+                        <div class="product">
+                            <h3>POTATOES</h3>
+                            <p>Price: M80.00</p>
+                            <img src="pott.jpg" width="90" height="90" alt="Potatoes">
+                        </div>
+                        <div class="product">
+                            <h3>CABBAGE</h3>
+                            <p>Price: M15.00</p>
+                            <img src="cabagge.jpg" width="90" height="90" alt="Cabbage">
+                        </div>
+                        <div class="product">
+                            <h3>CARROTS</h3>
+                            <p>Price: M25.00</p>
+                            <img src="carrots.jpg" width="90" height="90" alt="Carrots">
+                        </div>
+                    </div>
+                    <a class="back-button" href="Home.html">Back to Home</a>
+                </div>
+                <button class="sub-button" onclick="showDetail('Fruits-info'); showBackButton();">Fruits</button>
+                <div id="Fruits-info" class="info">
+
+<div class="fruits">
+    <h3>Fruits</h3>
+    <p>Discover the variety and benefits of fruits!</p>
+
+    <h4>Categories</h4>
+    <ul>
+        <li>Citrus Fruits</li>
+        <li>Berries</li>
+        <li>Tropical Fruits</li>
+        <li>Stone Fruits</li>
+        <li>Melons</li>
+    </ul>
+
+    <h5>Nutritional Information</h5>
+    <table>
+        <tr>
+            <th>Fruit</th>
+            <th>Calories</th>
+            <th>Vitamins</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>95</td>
+            <td>Vitamin C</td>
+        </tr>
+
+
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>105</td>
+                    <td>Vitamin B6</td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                    <td>62</td>
+                    <td>Vitamin C</td>
+                </tr>
+
+        <!-- Add more fruits -->
+    </table>
+<section>
+    <h2>Seasonal Availability</h2>
+
+<p>Check out our seasonal fruit chart.</p>
+          <button id="seasonal-button" onclick="toggleSeasonalChart()">Show Seasonal Chart</button>
+            <div id="seasonal-chart" class="hidden">
+
+<img src="Chart.JPG" alt="Seasonal Chart" class="chart-image">
+
+</div>
+
+</section>
+    
+
+    <h2>Health Benefits</h2>
+    
+    <p>
+
+Fruits and vegetables are a great source of vitamins and minerals.
+You get to enjoy a variety of flavors and textures
+Lots and lots of fiber.
+They're low-calorie and low-fat.
+Protect against cancer and other diseases. 
+Fruits and vegetables help you maintain good health.
+
+    </p>
+
+    <h2>Recipes</h2>
+    <a href="https://www.tasteofhome.com/collection/healthy-and-refreshing-fruit-recipes/"class="responsive-link">https://www.tasteofhome.com/collection/healthy-and-refreshing-fruit-recipes/ </a>
+
+    <h2>Growing Tips</h2>
+    <p> Choose a Location with Lots of Sunshine. 
+Keep a Consistent Watering Schedule. 
+Amend Your Beds with Lots of Organic Matter. 
+Use High-Quality Fertilizers. 
+Don't Hesitate to Thin Out Seedlings. 
+Be Diligent with Pruning. 
+Harvest at the Right Time. 
+Eat Right Away! </p>
+
+    
+    <div class="apples.jpg">
+        <!-- Add images -->
+    </div>
+
+    <h2>Fun Facts</h2>
+    <p> Did you know that strawberries are the only fruit with seeds on the outside?</p>
+</div>
+
+                    <a class="back-button" href="Home.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="button" onclick="toggleInfo('galaxy-shop-info')">GALAXY SHOP </button>
+            <div id="galaxy-shop-info" class="info">
+                <button class="sub-button" onclick="showDetail('mobiles-info'); showBackButton();">Mobiles</button>
+                <div id="mobiles-info" class="info">
+                    
+
+    <header>
+        <h1>Online Store</h1>
+     
+    </header>
+
+    <main>
+        <section id="products" class="circle-layout">
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="Iphone.JPG" alt="Phone Model 1">
+                    <div class="text">
+                        <h2>Iphone11</h2>
+                        <p class="price">M20000 <span style="text-decoration: line-through; color: #888;"M20000 </span></p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="S10.PNG" alt="Phone Model 2">
+                    <div class="text">
+                        <h2>SumsungS10</h2>
+                        <p class="price">M150000</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="Nokia.JPG" alt="Phone Model 3">
+                    <div class="text">
+                        <h2>Nokia c10</h2>
+                        <p class="price">M1999.99 <span style="text-decoration: line-through; color: #888;"> M1999.99 </span></p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="Asus.PNG" alt="Phone Model 4">
+                    <div class="text">
+                        <h2>Asus 01</h2>
+                        <p class="price">M999.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card sale">
+                <span class="sale-label">Sale</span>
+                <h2>Iphone11</h2> 
+                <p class="price"> M18000 <span style="text-decoration: line-through; color: red;"> M20000 </span></p>
+                <button class="buy-button" onclick="openModal('Phone Model 1', 699)">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <h2>SumsungS10</h2>
+                <p class="price"> M150000 </p>
+                <button class="buy-button" onclick="openModal('Phone Model 2', 799)">Buy Now</button>
+            </div>
+            <div class="product-card sale">
+                <span class="sale-label">Sale</span>
+                <h2>Nokiac10</h2>
+                <p class="price">M1550.00 <span style="text-decoration: line-through; color: red;"> M1999.99 </span></p>
+                <button class="buy-button" onclick="openModal('Phone Model 3', 899)">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <h2>Asus01</h2>
+                <p class="price">M999.00</p>
+                <button class="buy-button" onclick="openModal('Phone Model 4', 999)">Buy Now</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: M<span id="total-price">0</span></p>
+            <button id="checkout-button" style="display: none;" onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Payment</h2>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="mobile-number" class="input-field" placeholder="Mobile Number" required>
+                <input type="text" id="card-number" class="input-field" placeholder="Card Number" required>
+                <input type="text" id="expiry-date" class="input-field" placeholder="Expiry Date (MM/YY)" required>
+            </div>
+            <div class="modal-footer">
+                <button class="proceed-button" onclick="proceedPayment()">Proceed with Payment</button>
+                <button onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+                    <a class="back-button" href="Home.html">Back to Home</a>
+                </div>
+                <button class="sub-button" onclick="showDetail('computers-info'); showBackButton();">Computers</button>
+                <div id="computers-info" class="info">
+                    <p>Tech with us.</p>
+
+     <img src="Comp.JPG"/>
+
+                    <a class="back-button" href="Home.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="button" onclick="toggleInfo('accessories-info')">ACCESSORIES</button>
+            <div id="accessories-info" class="info">
+                <button class="sub-button" onclick="showDetail('mens-info'); showBackButton();">Mens</button>
+                <div id="mens-info" class="info">
+                    
+
+  <section>
+        <h2>Watches</h2>
+        <ul>
+            <li>Classic Leather Strap Watch</li>
+            <li>Sports Watch with GPS</li>
+            <li>Stainless Steel Bracelet Watch</li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Belts</h5>
+        <ul>
+            <li>Casual Canvas Belt</li>
+            <li>Formal Leather Belt</li>
+            <li>Reversible Belt</li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Wallets</h5>
+        <ul>
+            <li>Slim RFID Wallet</li>
+            <li>Bifold Leather Wallet</li>
+            <li>Minimalist Card Holder</li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Ties & Bowties</h5>
+        <ul>
+            <li>Silk Ties in Various Colors</li>
+            <li>Pre-tied Bowties</li>
+            <li>Pocket Squares</li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Sunglasses</h5>
+        <ul>
+            <li>Aviator Sunglasses</li>
+            <li>Wayfarer Style</li>
+            <li>Polarized Sport Sunglasses</li>
+        </ul>
+    </section>
+
+                    <a class="back-button" href="Home.html">Back to Home</a>
+                </div>
+                <button class="sub-button" onclick="showDetail('ladies-info'); showBackButton();">Ladies</button>
+                <div id="ladies-info" class="info">
+                       <div class="accessories">
+        <div class="item">
+            <img src="Neck.PNG" alt="Necklace">
+        
+        </div>
+       
+        <div class="item">
+            <img src="Sun.JPG" alt="Sunglasses">
+           
+        </div>
+        <div class="item">
+            <img src="Scarff.JPG" alt="Scarf">
+
+        </div>
+    </div>
+
+    <a href="#" class="shop-button">Shop Now</a>
+                    <a class="back-button" href="Home.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer> 
+    <p>&copy; 2024. All rights reserved.</p>
+
+</footer>
+
+
+
+
+
+    <script>
+        function toggleInfo(infoId) {
+            const infoDiv = document.getElementById(infoId);
+            infoDiv.style.display = infoDiv.style.display === 'none' || infoDiv.style.display === '' ? 'block' : 'none';
+        }
+
+        function showDetail(detailId) {
+            const detailDiv = document.getElementById(detailId);
+            detailDiv.style.display = detailDiv.style.display === 'none' || detailDiv.style.display === '' ? 'block' : 'none';
+        }
+
+        function showBackButton() {
+            const backButtons = document.querySelectorAll('.back-button');
+            backButtons.forEach(button => button.style.display = 'block');
+        }
+
+ function toggleSeasonalChart() {
+            const seasonalChart = document.getElementById('seasonal-chart');
+            seasonalChart.style.display = seasonalChart.style.display === 'none' || seasonalChart.style.display === '' ? 'block' : 'none';
+        }
+
+function showDetail(detailId) {
+    const detailDiv = document.getElementById(detailId);
+    detailDiv.style.display = detailDiv.style.display === 'none' || detailDiv.style.display === '' ? 'block' : 'none';
+}
+
+let cart = [];
+        let total = 0;
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => slide.classList.remove('active'));
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }
+
+        setInterval(showSlides, 3000); // Change image every 3 seconds
+
+        function openModal(productName, price) {
+            cart.push({ name: productName, price });
+            total += price;
+            document.getElementById('cart-count').innerText = cart.length;
+            document.getElementById('total-price').innerText = total.toFixed(2);
+            document.getElementById('checkout-button').style.display = 'block';
+            document.getElementById('paymentModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('paymentModal').style.display = 'none';
+            document.getElementById('mobile-number').value = '';
+            document.getElementById('card-number').value = '';
+            document.getElementById('expiry-date').value = '';
+        }
+
+        function proceedPayment() {
+            const mobileNumber = document.getElementById('mobile-number').value;
+            const cardNumber = document.getElementById('card-number').value;
+            const expiryDate = document.getElementById('expiry-date').value;
+
+            if (!mobileNumber || !cardNumber || !expiryDate) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            alert(`Payment of $${total.toFixed(2)} successful!`);
+            closeModal();
+            cart = [];
+            total = 0;
+            document.getElementById('cart-count').innerText = 0;
+            document.getElementById('total-price').innerText = '0.00';
+            document.getElementById('checkout-button').style.display = 'none';
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert("Your cart is empty.");
+                return;
+            }
+            openModal();
+        }
+
+
+    </script>
+</body>
+</html>

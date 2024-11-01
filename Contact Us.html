@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: green;
+            color: white;
+            padding: 10px 0;
+            text-align: left;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+           text-align:justify;
+
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            color: green;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form label {
+            margin: 10px 0 5px;
+        }
+        form input, form textarea, form select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background: green;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkgreen;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #welcome-ad-portal {
+            display: none;
+        }
+        .ad {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: green;
+            color: white;
+        }
+
+
+
+
+.contact-info {
+    border: 1px solid green;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: 20px 0 20px 20px;
+    box-shadow: 0 8px 8px green;
+}
+
+.contact-info h3 {
+    color: green;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: blue;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LESOTHO HUB</h1>
+
+<nav>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+          
+            <li><a href="About us.html">ABOUT US</a></li>
+
+ <li><a href="Business tips.html">BUSINESS TIPS</a></li>
+
+   </ul>
+    </nav>
+
+    </header>
+  
+    
+    <h2>Contact Us</h2>
+    <ul>
+        <li> WE PROVIDE GOOD MARKETING AD PLATFORM</li>
+     
+    </ul>
+
+
+   <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email:  <a href="mailto:lyllianlekhapelo18@gmail.com"?subject=inquiry&body="....">lyllianlekhapelo18@gmail.com</a></p>
+            <p>Phone: <a href="tel:+26659349582"> +266 (593) 495-82</p>
+            <p>WhatsApp:  <a href="https://wa.me/63798752" target="_">63798752</a></p>
+            <p>Address:<br>
+                      Mathokoane<br>
+                      P.O.BOX 789<br>
+                      Leribe 300<br>
+                      Lesotho
+                    </p> 
+                    </div>
+
+    
+    <div class="cta">
+        <h3>AD HERE</h3>
+        <button onclick="toggleWelcome()">SUBSCRIBE NOW</button>
+    </div>
+
+    <div id="welcome-ad-portal">
+        <header>
+            <h1>Welcome to Lesotho Hub Ad Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#submit-ad" onclick="toggleSubmitAd()">Submit Ad</a></li>
+                    <li><a href="#ads" id="view-ads" style="display: none;">View Ads</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="register">
+            <h2>Register</h2>
+            <form action="register.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="button" onclick="toggleSubmitAd()">Register</button>
+            </form>
+        </section>
+
+        <section id="submit-ad" style="display: none;">
+            <h2>Submit Your Ad</h2>
+            <form id="ad-form" onsubmit="return submitAd(event);">
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business_name" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="services">Services</option>
+                    <option value="retail">Retail</option>
+                    <option value="food">Food</option>
+                    <option value="technology">Technology</option>
+                </select>
+
+                <button type="submit">Submit Ad</button>
+            </form>
+        </section>
+
+        <section id="ads" style="display: none;">
+            <h2>Current Ads</h2>
+            <div id="ad-list"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>copyright@2024</p>
+    </footer>
+
+    <script>
+        function toggleWelcome() {
+            const portal = document.getElementById('welcome-ad-portal');
+            portal.style.display = portal.style.display === 'none' || portal.style.display === '' ? 'block' : 'none';
+        }
+
+        function toggleSubmitAd() {
+            const submitAdSection = document.getElementById('submit-ad');
+            submitAdSection.style.display = submitAdSection.style.display === 'none' || submitAdSection.style.display === '' ? 'block' : 'none';
+        }
+
+        function submitAd(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const businessName = document.getElementById('business-name').value;
+            const description = document.getElementById('description').value;
+            const category = document.getElementById('category').value;
+
+            // Create a new ad element
+            const adList = document.getElementById('ad-list');
+            const adDiv = document.createElement('div');
+            adDiv.className = 'ad';
+            adDiv.innerHTML = `<h3>${businessName}</h3><p>${description}</p><p>Category: ${category}</p>`;
+            adList.appendChild(adDiv);
+
+            // Show the ads section and the view ads link
+            document.getElementById('ads').style.display = 'block';
+            document.getElementById('view-ads').style.display = 'block';
+
+            // Clear the form
+            document.getElementById('ad-form').reset();
+
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>
